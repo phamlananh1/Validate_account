@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function account(text) {
+        patt = /^[_a-z0-9]{6,}$/;
+        if (patt.test(text)) {
+            alert("Đúng định dạng");
+        } else {
+            alert("không dúng định dạng:");
+        }
+    }
+    var text = prompt("nhạp account: ");
+    var resul = account(text);
+    alert(resul);
+</script>
+</body>
+</html>
